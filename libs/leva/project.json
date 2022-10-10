@@ -1,0 +1,24 @@
+{
+  "name": "leva",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/leva/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/leva/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/leva"],
+      "options": {
+        "jestConfig": "libs/leva/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

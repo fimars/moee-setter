@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@moee/leva": ["libs/leva/src/index.ts"],
+      "@moee/reducer": ["apps/leva/src/app/componentsReducer.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

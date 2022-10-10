@@ -1,6 +1,10 @@
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom/client';
+import { AppProvider } from '@shopify/polaris';
+import { Provider } from 'react-redux';
+import '@shopify/polaris/build/esm/styles.css';
 
+import { store } from './app/store';
 import App from './app/app';
 
 const root = ReactDOM.createRoot(
@@ -8,6 +12,10 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <StrictMode>
-    <App />
+    <Provider store={store}>
+      <AppProvider i18n={{}}>
+        <App />
+      </AppProvider>
+    </Provider>
   </StrictMode>
 );

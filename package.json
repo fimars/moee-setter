@@ -9,10 +9,14 @@
   },
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.6",
+    "@shopify/polaris": "^10.7.0",
+    "@shopify/polaris-icons": "^6.4.0",
     "core-js": "^3.6.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-is": "18.2.0",
+    "react-redux": "^8.0.4",
     "regenerator-runtime": "0.13.7",
     "styled-components": "5.3.5",
     "tslib": "^2.3.0"
